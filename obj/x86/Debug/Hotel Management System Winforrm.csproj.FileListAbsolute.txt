@@ -1,0 +1,24 @@
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\bin\x86\Debug\FormSignUp.Designer.cs
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\bin\x86\Debug\Hotel Management System Winforrm.exe.config
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\bin\x86\Debug\Hotel Management System Winforrm.exe
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\bin\x86\Debug\Hotel Management System Winforrm.pdb
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel Management System Winforrm.csprojAssemblyReference.cache
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmLogin.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmSignUp.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.Properties.Resources.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel Management System Winforrm.csproj.GenerateResource.cache
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel Management System Winforrm.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel Management System Winforrm.exe
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel Management System Winforrm.pdb
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\bin\x86\Debug\frmLogin.Designer.cs
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.HotelManagement.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmDatPhong.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmQuanLyKhachHang.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmQuanLyLoaiPhong.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmQuanLyNhanVien.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmQuanLyPhong.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmQuanLyPhuThu.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.txtSoLuong_XoaSP.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmQuanLyTaiKhoan.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmThuePhong.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmTraPhong.resources
