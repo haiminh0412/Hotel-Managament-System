@@ -63,15 +63,7 @@ namespace Hotel_Management_System_Winforrm
             rdoNam_ThuePhong.Checked = true;
         }
 
-        private void FrmThuePhong_Load(object sender, EventArgs e)
-        {
-            txtPhong_ThuePhong.Text = tenphong;
-            txtLoaiPhong_ThuePhong.Text = qLThuePhong.loaiphong(tenphong);
-            giaphong = qLThuePhong.giaphong(tenphong);
-            songuoitoida = qLThuePhong.songuoitoda(tenphong);
-            txtGiaPhong_ThuePhong.Text = giaphong.ToString();
-            macdinh();
-        }
+       
 
         private ThuePhong TaoThongTinThuePhong()
         {
@@ -214,5 +206,14 @@ namespace Hotel_Management_System_Winforrm
             macdinh();
         }
 
+        private void FrmThuePhong_Load(object sender, EventArgs e)
+        {
+            txtPhong_ThuePhong.Text = tenphong;
+            txtLoaiPhong_ThuePhong.Text = qLThuePhong.loaiphong(tenphong);
+            giaphong = qLThuePhong.giaphong(tenphong);
+            songuoitoida = qLThuePhong.songuoitoda(tenphong);
+            txtGiaPhong_ThuePhong.Text = giaphong.ToString();
+            macdinh();
+        }
     }
 }

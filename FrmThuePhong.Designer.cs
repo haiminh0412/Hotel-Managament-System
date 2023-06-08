@@ -667,6 +667,7 @@
             this.Name = "FrmThuePhong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmThuePhong";
+            this.Load += new System.EventHandler(this.FrmThuePhong_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
