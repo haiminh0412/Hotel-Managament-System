@@ -70,6 +70,8 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="DatPhong.cs" />
+    <Compile Include="Dichvu.cs" />
     <Compile Include="FrmDatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +152,12 @@
     <Compile Include="FrmThongTinCaNhan.Designer.cs">
       <DependentUpon>FrmThongTinCaNhan.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmThongTinDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThongTinDichVu.Designer.cs">
+      <DependentUpon>FrmThongTinDichVu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmThuePhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,10 +181,13 @@
     <Compile Include="Phong.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLThuePhong.cs" />
     <Compile Include="QuanLyKhachHang.cs" />
     <Compile Include="QuanLyNhanVien.cs" />
     <Compile Include="QuanLyPhong.cs" />
     <Compile Include="QuanLyTaiKhoan.cs" />
+    <Compile Include="ThongTinDatPhong.cs" />
+    <Compile Include="ThuePhong.cs" />
     <EmbeddedResource Include="FrmDatPhong.resx">
       <DependentUpon>FrmDatPhong.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQuanLyTaiKhoan.resx">
       <DependentUpon>FrmQuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmThongTinDichVu.resx">
+      <DependentUpon>FrmThongTinDichVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThuePhong.resx">
       <DependentUpon>FrmThuePhong.cs</DependentUpon>
@@ -295,6 +309,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hotel-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hotel-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-wrench.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-booking-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bedroom-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-online-payment-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

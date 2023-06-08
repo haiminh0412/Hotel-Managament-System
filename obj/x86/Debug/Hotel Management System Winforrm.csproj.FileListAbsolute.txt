@@ -22,3 +22,4 @@ D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hot
 D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmQuanLyTaiKhoan.resources
 D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmThuePhong.resources
 D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmTraPhong.resources
+D:\Visual Studio 2019\File C#\Hotel Management System Winforrm\obj\x86\Debug\Hotel_Management_System_Winforrm.FrmThongTinDichVu.resources

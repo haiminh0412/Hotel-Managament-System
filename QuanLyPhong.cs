@@ -33,15 +33,7 @@ namespace Hotel_Management_System_Winforrm
             string query = "insert into Phong values(@id, @ten, @loaiphong, @mota, @songuoitoida, @trangthai)";
             try
             {
-                sqlConnection.Open();
-                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
-                sqlCommand.Parameters.AddWithValue("@id", phong.Maphong);
-                sqlCommand.Parameters.AddWithValue("@ten", phong.Tenphong);
-                sqlCommand.Parameters.AddWithValue("@loaiphong", phong.Loaiphong);
-                sqlCommand.Parameters.AddWithValue("@mota", phong.Motaphong);
-                sqlCommand.Parameters.AddWithValue("@songuoitoida", phong.Songuoitoida);
-                sqlCommand.Parameters.AddWithValue("@trangthai", phong.Trangthai);
-                sqlCommand.ExecuteNonQuery();
+              
             }
             catch
             {
@@ -83,7 +75,7 @@ namespace Hotel_Management_System_Winforrm
             {
                 sqlConnection.Open();
                 SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
-                sqlCommand.Parameters.AddWithValue("@manv", phong.Maphong);
+             
                 sqlCommand.Parameters.AddWithValue("@ten", phong.Tenphong);
                 sqlCommand.Parameters.AddWithValue("@loaiphong", phong.Loaiphong);
                 sqlCommand.Parameters.AddWithValue("@Mota", phong.Motaphong);
