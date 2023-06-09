@@ -30,6 +30,37 @@ namespace Hotel_Management_System_Winforrm
 
         public string Trangthai { get => trangthai; set => trangthai = value; }
 
+        private void caiDatTrangThai(string tt)
+        {
+            switch(tt)
+            {
+                case "Mac dinh":
+                    txtTenKhach_ThuePhong.Enabled = true;
+                    txtSDT_ThuePhong.Enabled = true;
+                    txtCMND_ThuePhong.Enabled = true;
+                    txtSoNguoiO_ThuePhong.Enabled = true;
+                    dtpNgaySinh_ThuePhong.Enabled = true;
+                    dtpNguoiDi_ThuePhong.Enabled = true;
+                    dtpNgayDen_ThuePhong.Enabled = true;
+                    cboQuocTich_ThuePhong.Enabled = true;
+                    break;
+
+                case "Tim Kiem":
+                    txtTenKhach_ThuePhong.Enabled = false;
+                    txtSDT_ThuePhong.Enabled = false;
+                    txtCMND_ThuePhong.Enabled = false;
+                    txtSoNguoiO_ThuePhong.Enabled = false;
+                    dtpNgaySinh_ThuePhong.Enabled = false;
+                    dtpNguoiDi_ThuePhong.Enabled = false;
+                    dtpNgayDen_ThuePhong.Enabled = false;
+                    cboQuocTich_ThuePhong.Enabled = false;
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
         private bool KiemTraThongTin()
         {
             return !String.IsNullOrEmpty(txtTenKhach_ThuePhong.Text) && !String.IsNullOrEmpty(txtSDT_ThuePhong.Text)
@@ -47,7 +78,7 @@ namespace Hotel_Management_System_Winforrm
             dtpNgaySinh_ThuePhong.Value = DateTime.Now;
             dtpNgayDen_ThuePhong.Value = DateTime.Now;
             dtpNguoiDi_ThuePhong.Value = DateTime.Now;
-            txtSoNguoiO_ThuePhong.Text = "0";
+            txtSoNguoiO_ThuePhong.Text = "1";
             txtCMND_ThuePhong.Text = "";
             txtTienPhaiTra_ThuePhong.Text = txtGiaPhong_ThuePhong.Text;
             try
@@ -131,6 +162,8 @@ namespace Hotel_Management_System_Winforrm
                 return;
             }
 
+            caiDatTrangThai("Tim Kiem");
+
             try
             {
                 dgvBangPhong_ThuePhong.DataSource = qLThuePhong.timKiem(txtCMND_ThuePhong.Text, tenphong);
@@ -169,12 +202,14 @@ namespace Hotel_Management_System_Winforrm
             {
                 MessageBox.Show("Lỗi đặt phòng!");
             }
+            caiDatTrangThai("Mac dinh");
             macdinh();
         }
 
         private void dgvBangPhong_ThuePhong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = (DataGridViewRow)dgvBangPhong_ThuePhong.Rows[e.RowIndex];
+            caiDatTrangThai("Tim Kiem");
             if (e.RowIndex >= 0 && e.RowIndex < dgvBangPhong_ThuePhong.RowCount - 1)
             {
                 txtTenKhach_ThuePhong.Text = row.Cells[2].Value.ToString();
@@ -203,17 +238,24 @@ namespace Hotel_Management_System_Winforrm
 
         private void btnReset_ThuePhong_Click(object sender, EventArgs e)
         {
+            caiDatTrangThai("Mac dinh");
             macdinh();
         }
 
         private void FrmThuePhong_Load(object sender, EventArgs e)
         {
+            caiDatTrangThai("Mac dinh");
             txtPhong_ThuePhong.Text = tenphong;
             txtLoaiPhong_ThuePhong.Text = qLThuePhong.loaiphong(tenphong);
             giaphong = qLThuePhong.giaphong(tenphong);
             songuoitoida = qLThuePhong.songuoitoda(tenphong);
             txtGiaPhong_ThuePhong.Text = giaphong.ToString();
             macdinh();
+        }
+
+        private void btnHuy_ThuePhong_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

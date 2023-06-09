@@ -31,7 +31,6 @@ namespace Hotel_Management_System_Winforrm
 
         private void thuêPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HotelManagement_Load(sender, e);
             Button btnPhong = contextMenuStrip1.SourceControl as Button;
 
             if(btnPhong.BackColor == Color.Red)
@@ -44,7 +43,6 @@ namespace Hotel_Management_System_Winforrm
             FrmThuePhong frmThuePhong = new FrmThuePhong(tenphong, btnPhong);
             frmThuePhong.Text = tenphong;
             frmThuePhong.Show();
-            HotelManagement_Load(sender, e);
         }
 
         public string TrangThai(string phong)
@@ -97,6 +95,23 @@ namespace Hotel_Management_System_Winforrm
             if (TrangThai(btnP306.Text) == "Co nguoi o") btnP306.BackColor = Color.Red;
             if (TrangThai(btnP307.Text) == "Co nguoi o") btnP307.BackColor = Color.Red;
             if (TrangThai(btnP308.Text) == "Co nguoi o") btnP308.BackColor = Color.Red;
+        }
+
+        private void đặtDịchVụToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Button btnPhong = contextMenuStrip1.SourceControl as Button;
+            if(btnPhong.BackColor == Color.Red)
+            {
+                string tenphong = btnPhong.Text;
+                FrmThongTinDichVu frmThongTinDichVu = new FrmThongTinDichVu(tenphong);
+                frmThongTinDichVu.Text = tenphong;
+                frmThongTinDichVu.Show();
+            }
+        }
+
+        private void trảPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -21,6 +21,11 @@ namespace Hotel_Management_System_Winforrm
         private DateTime ngaydi;
         private double tienphaitra;
 
+        public ThuePhong()
+        {
+
+        } 
+
         public ThuePhong(string tenphong, string loaiphong, string tenkhachhang, DateTime ngaysinh, string gioitinh, string sodienthoai, string cmnd, int songuoio, string quoctich, DateTime ngayden, DateTime ngaydi, double tienphaitra)
         {
             this.tenphong = tenphong;

@@ -135,7 +135,7 @@ namespace Hotel_Management_System_Winforrm
         private void FrmDatPhong_Load(object sender, EventArgs e)
         {
             trangthai("Them");
-            txtSoNguoiO_DatPhong.Text = "0";
+            txtSoNguoiO_DatPhong.Text = "1";
             cboQuocTich_DatPhong.SelectedItem = "Việt Nam (Vietnam)";
             txtPhong_DatPhong.Text = tenphong;
             txtLoaiPhong_DatPhong.Text = datPhong.loaiphong(tenphong);

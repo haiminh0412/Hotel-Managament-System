@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -38,7 +40,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x86</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>8.0</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
@@ -49,7 +51,7 @@
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <PlatformTarget>x86</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>8.0</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
@@ -181,6 +183,7 @@
     <Compile Include="Phong.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDichVu.cs" />
     <Compile Include="QLThuePhong.cs" />
     <Compile Include="QuanLyKhachHang.cs" />
     <Compile Include="QuanLyNhanVien.cs" />
@@ -327,6 +330,81 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-online-payment-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-food-service-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cola-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rice-bowl-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rice-bowl-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cafe-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-noodle-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-kawaii-noodle-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bubble-tea-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-kfc-chicken-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hotdog-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-snack-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hotdog-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-kfc-chicken-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bubble-tea-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-kawaii-noodle-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-noodle-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cafe-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rice-bowl-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rice-bowl-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cola-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-food-service-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-snack-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-beer-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-float-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-soup-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

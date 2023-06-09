@@ -607,6 +607,7 @@
             this.btnHuy_ThuePhong.TabIndex = 16;
             this.btnHuy_ThuePhong.Text = "Hủy";
             this.btnHuy_ThuePhong.UseVisualStyleBackColor = true;
+            this.btnHuy_ThuePhong.Click += new System.EventHandler(this.btnHuy_ThuePhong_Click);
             // 
             // btnTimKiem_ThuePhong
             // 
