@@ -111,7 +111,18 @@ namespace Hotel_Management_System_Winforrm
 
         private void trảPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Button btnPhong = contextMenuStrip1.SourceControl as Button;
+            string tenphong = btnPhong.Text;
+            if(btnPhong.BackColor == Color.Red)
+            {
+                FrmTraPhong frmTraPhong = new FrmTraPhong(tenphong);
+                frmTraPhong.Text = tenphong;
+                frmTraPhong.Show();
+            }
+            else
+            {
+                MessageBox.Show("Phong trong!");
+            }
         }
     }
 }

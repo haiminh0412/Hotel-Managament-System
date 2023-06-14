@@ -139,7 +139,7 @@ namespace Hotel_Management_System_Winforrm
                 if (songuoio[i] < '0' || songuoio[i] > '9')
                     return false;
             }
-            return Convert.ToInt32(songuoio) > 0 && Convert.ToInt32(songuoio) <= songuoitoida;
+            return Convert.ToInt32(songuoio) >= 1 && Convert.ToInt32(songuoio) <= songuoitoida;
         }
 
         private void txtSDT_ThuePhong_TextChanged(object sender, EventArgs e)

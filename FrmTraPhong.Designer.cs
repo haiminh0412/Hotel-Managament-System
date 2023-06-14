@@ -28,429 +28,733 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtpNgayTraPhong_TraPhong = new System.Windows.Forms.DateTimePicker();
-            this.dtpNgayDi_TraPhong = new System.Windows.Forms.DateTimePicker();
-            this.dtpNgayDen_TraPhong = new System.Windows.Forms.DateTimePicker();
             this.label73 = new System.Windows.Forms.Label();
-            this.txtTongPhi_TraPhong = new System.Windows.Forms.TextBox();
-            this.txtPhiPhuThu_TraPhong = new System.Windows.Forms.TextBox();
-            this.txtPhiPhong_TraPhong = new System.Windows.Forms.TextBox();
-            this.txtSoNgayThue_TraPhong = new System.Windows.Forms.TextBox();
-            this.txtSoNguoi_TraPhong = new System.Windows.Forms.TextBox();
-            this.txtTenNhanVien_TraPhong = new System.Windows.Forms.TextBox();
-            this.txtMaNhanVien_TraPhong = new System.Windows.Forms.TextBox();
-            this.txtTenKhach_TraPhong = new System.Windows.Forms.TextBox();
-            this.txtMaKhach_TraPhong = new System.Windows.Forms.TextBox();
-            this.txtGiaPhong_TraPhong = new System.Windows.Forms.TextBox();
-            this.txtTenPhong_TraPhong = new System.Windows.Forms.TextBox();
-            this.txtMaPhong_TraPhong = new System.Windows.Forms.TextBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.dgvBangPhuThu_TraPhong = new System.Windows.Forms.DataGridView();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.dgvBangTraPhong_TraPhong = new System.Windows.Forms.DataGridView();
-            this.txtNhapTimKiem_TraPhong = new System.Windows.Forms.TextBox();
-            this.cboTruongTimKiem_TraPhong = new System.Windows.Forms.ComboBox();
-            this.label71 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBangPhuThu_TraPhong)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBangTraPhong_TraPhong)).BeginInit();
+            this.dgvBangDichVu = new System.Windows.Forms.DataGridView();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtTienDichVu = new System.Windows.Forms.TextBox();
+            this.txtTienPhong = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cboQuocTich = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dtpNguoiDi = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayDen = new System.Windows.Forms.DateTimePicker();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pnlGioiTinh_DatPhong = new System.Windows.Forms.Panel();
+            this.rdoNu = new System.Windows.Forms.RadioButton();
+            this.rdoNam = new System.Windows.Forms.RadioButton();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtTenKhach = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.txtLoaiPhong = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtPhong = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.btnThanhToan = new System.Windows.Forms.Button();
+            this.btnInHoaDon = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTraChoKhach = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtCMND = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtTienKhachTra = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBangDichVu)).BeginInit();
+            this.pnlGioiTinh_DatPhong.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dtpNgayTraPhong_TraPhong
-            // 
-            this.dtpNgayTraPhong_TraPhong.Location = new System.Drawing.Point(410, 537);
-            this.dtpNgayTraPhong_TraPhong.Name = "dtpNgayTraPhong_TraPhong";
-            this.dtpNgayTraPhong_TraPhong.Size = new System.Drawing.Size(229, 22);
-            this.dtpNgayTraPhong_TraPhong.TabIndex = 91;
-            // 
-            // dtpNgayDi_TraPhong
-            // 
-            this.dtpNgayDi_TraPhong.Location = new System.Drawing.Point(410, 493);
-            this.dtpNgayDi_TraPhong.Name = "dtpNgayDi_TraPhong";
-            this.dtpNgayDi_TraPhong.Size = new System.Drawing.Size(229, 22);
-            this.dtpNgayDi_TraPhong.TabIndex = 90;
-            // 
-            // dtpNgayDen_TraPhong
-            // 
-            this.dtpNgayDen_TraPhong.Location = new System.Drawing.Point(410, 444);
-            this.dtpNgayDen_TraPhong.Name = "dtpNgayDen_TraPhong";
-            this.dtpNgayDen_TraPhong.Size = new System.Drawing.Size(225, 22);
-            this.dtpNgayDen_TraPhong.TabIndex = 89;
             // 
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(1232, 331);
+            this.label73.Location = new System.Drawing.Point(418, 67);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(93, 17);
+            this.label73.Size = new System.Drawing.Size(90, 17);
             this.label73.TabIndex = 88;
-            this.label73.Text = "Bảng phụ thu";
-            // 
-            // txtTongPhi_TraPhong
-            // 
-            this.txtTongPhi_TraPhong.Location = new System.Drawing.Point(779, 526);
-            this.txtTongPhi_TraPhong.Name = "txtTongPhi_TraPhong";
-            this.txtTongPhi_TraPhong.Size = new System.Drawing.Size(188, 22);
-            this.txtTongPhi_TraPhong.TabIndex = 87;
-            // 
-            // txtPhiPhuThu_TraPhong
-            // 
-            this.txtPhiPhuThu_TraPhong.Location = new System.Drawing.Point(779, 484);
-            this.txtPhiPhuThu_TraPhong.Name = "txtPhiPhuThu_TraPhong";
-            this.txtPhiPhuThu_TraPhong.Size = new System.Drawing.Size(188, 22);
-            this.txtPhiPhuThu_TraPhong.TabIndex = 86;
-            // 
-            // txtPhiPhong_TraPhong
-            // 
-            this.txtPhiPhong_TraPhong.Location = new System.Drawing.Point(779, 443);
-            this.txtPhiPhong_TraPhong.Name = "txtPhiPhong_TraPhong";
-            this.txtPhiPhong_TraPhong.Size = new System.Drawing.Size(188, 22);
-            this.txtPhiPhong_TraPhong.TabIndex = 85;
-            // 
-            // txtSoNgayThue_TraPhong
-            // 
-            this.txtSoNgayThue_TraPhong.Location = new System.Drawing.Point(779, 355);
-            this.txtSoNgayThue_TraPhong.Name = "txtSoNgayThue_TraPhong";
-            this.txtSoNgayThue_TraPhong.Size = new System.Drawing.Size(188, 22);
-            this.txtSoNgayThue_TraPhong.TabIndex = 84;
-            // 
-            // txtSoNguoi_TraPhong
-            // 
-            this.txtSoNguoi_TraPhong.Location = new System.Drawing.Point(779, 398);
-            this.txtSoNguoi_TraPhong.Name = "txtSoNguoi_TraPhong";
-            this.txtSoNguoi_TraPhong.Size = new System.Drawing.Size(188, 22);
-            this.txtSoNguoi_TraPhong.TabIndex = 83;
-            // 
-            // txtTenNhanVien_TraPhong
-            // 
-            this.txtTenNhanVien_TraPhong.Location = new System.Drawing.Point(410, 396);
-            this.txtTenNhanVien_TraPhong.Name = "txtTenNhanVien_TraPhong";
-            this.txtTenNhanVien_TraPhong.Size = new System.Drawing.Size(225, 22);
-            this.txtTenNhanVien_TraPhong.TabIndex = 82;
-            // 
-            // txtMaNhanVien_TraPhong
-            // 
-            this.txtMaNhanVien_TraPhong.Location = new System.Drawing.Point(414, 353);
-            this.txtMaNhanVien_TraPhong.Name = "txtMaNhanVien_TraPhong";
-            this.txtMaNhanVien_TraPhong.ReadOnly = true;
-            this.txtMaNhanVien_TraPhong.Size = new System.Drawing.Size(225, 22);
-            this.txtMaNhanVien_TraPhong.TabIndex = 81;
-            // 
-            // txtTenKhach_TraPhong
-            // 
-            this.txtTenKhach_TraPhong.Location = new System.Drawing.Point(121, 537);
-            this.txtTenKhach_TraPhong.Name = "txtTenKhach_TraPhong";
-            this.txtTenKhach_TraPhong.Size = new System.Drawing.Size(147, 22);
-            this.txtTenKhach_TraPhong.TabIndex = 80;
-            // 
-            // txtMaKhach_TraPhong
-            // 
-            this.txtMaKhach_TraPhong.Location = new System.Drawing.Point(121, 488);
-            this.txtMaKhach_TraPhong.Name = "txtMaKhach_TraPhong";
-            this.txtMaKhach_TraPhong.ReadOnly = true;
-            this.txtMaKhach_TraPhong.Size = new System.Drawing.Size(147, 22);
-            this.txtMaKhach_TraPhong.TabIndex = 79;
-            // 
-            // txtGiaPhong_TraPhong
-            // 
-            this.txtGiaPhong_TraPhong.Location = new System.Drawing.Point(121, 449);
-            this.txtGiaPhong_TraPhong.Name = "txtGiaPhong_TraPhong";
-            this.txtGiaPhong_TraPhong.Size = new System.Drawing.Size(147, 22);
-            this.txtGiaPhong_TraPhong.TabIndex = 78;
-            // 
-            // txtTenPhong_TraPhong
-            // 
-            this.txtTenPhong_TraPhong.Location = new System.Drawing.Point(121, 404);
-            this.txtTenPhong_TraPhong.Name = "txtTenPhong_TraPhong";
-            this.txtTenPhong_TraPhong.Size = new System.Drawing.Size(147, 22);
-            this.txtTenPhong_TraPhong.TabIndex = 77;
-            // 
-            // txtMaPhong_TraPhong
-            // 
-            this.txtMaPhong_TraPhong.Location = new System.Drawing.Point(121, 358);
-            this.txtMaPhong_TraPhong.Name = "txtMaPhong_TraPhong";
-            this.txtMaPhong_TraPhong.ReadOnly = true;
-            this.txtMaPhong_TraPhong.Size = new System.Drawing.Size(147, 22);
-            this.txtMaPhong_TraPhong.TabIndex = 76;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(657, 529);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(68, 17);
-            this.label62.TabIndex = 75;
-            this.label62.Text = "Tổng phí:";
-            // 
-            // dgvBangPhuThu_TraPhong
-            // 
-            this.dgvBangPhuThu_TraPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBangPhuThu_TraPhong.Location = new System.Drawing.Point(1009, 353);
-            this.dgvBangPhuThu_TraPhong.Name = "dgvBangPhuThu_TraPhong";
-            this.dgvBangPhuThu_TraPhong.RowHeadersWidth = 51;
-            this.dgvBangPhuThu_TraPhong.RowTemplate.Height = 24;
-            this.dgvBangPhuThu_TraPhong.Size = new System.Drawing.Size(504, 228);
-            this.dgvBangPhuThu_TraPhong.TabIndex = 74;
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(657, 487);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(84, 17);
-            this.label82.TabIndex = 73;
-            this.label82.Text = "Phí phụ thu:";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(657, 448);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(76, 17);
-            this.label83.TabIndex = 72;
-            this.label83.Text = "Phí phòng:";
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(657, 403);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(68, 17);
-            this.label84.TabIndex = 71;
-            this.label84.Text = "Số người:";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(657, 360);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(116, 17);
-            this.label85.TabIndex = 70;
-            this.label85.Text = "Số ngày đã thuê:";
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(294, 542);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(110, 17);
-            this.label86.TabIndex = 69;
-            this.label86.Text = "Ngày trả phòng:";
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(294, 493);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(60, 17);
-            this.label77.TabIndex = 68;
-            this.label77.Text = "Ngày đi:";
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(294, 449);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(73, 17);
-            this.label78.TabIndex = 67;
-            this.label78.Text = "Ngày đến:";
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(284, 401);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(103, 17);
-            this.label79.TabIndex = 66;
-            this.label79.Text = "Tên nhân viên:";
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(284, 358);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(97, 17);
-            this.label80.TabIndex = 65;
-            this.label80.Text = "Mã nhân viên:";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(28, 537);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(79, 17);
-            this.label81.TabIndex = 64;
-            this.label81.Text = "Tên khách:";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(31, 491);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(73, 17);
-            this.label76.TabIndex = 63;
-            this.label76.Text = "Mã khách:";
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(28, 449);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(78, 17);
-            this.label75.TabIndex = 62;
-            this.label75.Text = "Giá phòng:";
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(28, 409);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(81, 17);
-            this.label74.TabIndex = 61;
-            this.label74.Text = "Tên phòng:";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(31, 363);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(75, 17);
-            this.label72.TabIndex = 60;
-            this.label72.Text = "Mã phòng:";
-            // 
-            // dgvBangTraPhong_TraPhong
-            // 
-            this.dgvBangTraPhong_TraPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBangTraPhong_TraPhong.Location = new System.Drawing.Point(34, 100);
-            this.dgvBangTraPhong_TraPhong.Name = "dgvBangTraPhong_TraPhong";
-            this.dgvBangTraPhong_TraPhong.RowHeadersWidth = 51;
-            this.dgvBangTraPhong_TraPhong.RowTemplate.Height = 24;
-            this.dgvBangTraPhong_TraPhong.Size = new System.Drawing.Size(1479, 228);
-            this.dgvBangTraPhong_TraPhong.TabIndex = 59;
-            // 
-            // txtNhapTimKiem_TraPhong
-            // 
-            this.txtNhapTimKiem_TraPhong.Location = new System.Drawing.Point(789, 63);
-            this.txtNhapTimKiem_TraPhong.Name = "txtNhapTimKiem_TraPhong";
-            this.txtNhapTimKiem_TraPhong.Size = new System.Drawing.Size(274, 22);
-            this.txtNhapTimKiem_TraPhong.TabIndex = 58;
-            // 
-            // cboTruongTimKiem_TraPhong
-            // 
-            this.cboTruongTimKiem_TraPhong.FormattingEnabled = true;
-            this.cboTruongTimKiem_TraPhong.Location = new System.Drawing.Point(489, 63);
-            this.cboTruongTimKiem_TraPhong.Name = "cboTruongTimKiem_TraPhong";
-            this.cboTruongTimKiem_TraPhong.Size = new System.Drawing.Size(274, 24);
-            this.cboTruongTimKiem_TraPhong.TabIndex = 57;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(361, 66);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(100, 17);
-            this.label71.TabIndex = 56;
-            this.label71.Text = "Tìm kiếm theo:";
+            this.label73.Text = "Bảng dịch vụ";
+            // 
+            // dgvBangDichVu
+            // 
+            this.dgvBangDichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBangDichVu.Location = new System.Drawing.Point(48, 102);
+            this.dgvBangDichVu.Name = "dgvBangDichVu";
+            this.dgvBangDichVu.RowHeadersWidth = 51;
+            this.dgvBangDichVu.RowTemplate.Height = 24;
+            this.dgvBangDichVu.Size = new System.Drawing.Size(865, 306);
+            this.dgvBangDichVu.TabIndex = 74;
+            // 
+            // txtTongTien
+            // 
+            this.txtTongTien.Enabled = false;
+            this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongTien.ForeColor = System.Drawing.Color.Black;
+            this.txtTongTien.Location = new System.Drawing.Point(656, 684);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.ReadOnly = true;
+            this.txtTongTien.Size = new System.Drawing.Size(227, 22);
+            this.txtTongTien.TabIndex = 162;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(517, 687);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(124, 17);
+            this.label15.TabIndex = 161;
+            this.label15.Text = "Tổng tiền phải trả:";
+            // 
+            // txtTienDichVu
+            // 
+            this.txtTienDichVu.Enabled = false;
+            this.txtTienDichVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTienDichVu.ForeColor = System.Drawing.Color.Black;
+            this.txtTienDichVu.Location = new System.Drawing.Point(656, 637);
+            this.txtTienDichVu.Name = "txtTienDichVu";
+            this.txtTienDichVu.ReadOnly = true;
+            this.txtTienDichVu.Size = new System.Drawing.Size(227, 22);
+            this.txtTienDichVu.TabIndex = 160;
+            // 
+            // txtTienPhong
+            // 
+            this.txtTienPhong.Enabled = false;
+            this.txtTienPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTienPhong.ForeColor = System.Drawing.Color.Black;
+            this.txtTienPhong.Location = new System.Drawing.Point(656, 585);
+            this.txtTienPhong.Name = "txtTienPhong";
+            this.txtTienPhong.ReadOnly = true;
+            this.txtTienPhong.Size = new System.Drawing.Size(227, 22);
+            this.txtTienPhong.TabIndex = 159;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(517, 640);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(89, 17);
+            this.label13.TabIndex = 158;
+            this.label13.Text = "Tiền dịch vụ:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(517, 590);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(84, 17);
+            this.label14.TabIndex = 157;
+            this.label14.Text = "Tiền phòng:";
+            // 
+            // cboQuocTich
+            // 
+            this.cboQuocTich.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cboQuocTich.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboQuocTich.Enabled = false;
+            this.cboQuocTich.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboQuocTich.ForeColor = System.Drawing.Color.Black;
+            this.cboQuocTich.FormattingEnabled = true;
+            this.cboQuocTich.Items.AddRange(new object[] {
+            "Afghanistan",
+            "Ai Cập (Egypt)",
+            "Albania",
+            "Algeria",
+            "Ấn Độ (India)",
+            "Andorra",
+            "Angola",
+            "Antigua và Barbuda",
+            "Áo (Austria)",
+            "Argentina",
+            "Armenia",
+            "Azerbaijan",
+            "Ba Lan (Poland)",
+            "Bắc Triều Tiên (North Korea)",
+            "Bahamas",
+            "Bahrain",
+            "Bangladesh",
+            "Barbados",
+            "Belarus (Cộng hòa Belarus)",
+            "Belize",
+            "Bénin (Benin)",
+            "Bhutan",
+            "Bỉ (Belgium)",
+            "Bồ Đào Nha (Portugal)",
+            "Bolivia",
+            "Bosnia và Herzegovina",
+            "Botswana",
+            "Brazil (Brasil)",
+            "Brunei",
+            "Bulgaria",
+            "Burkina Faso",
+            "Burundi",
+            "Cabo Verde",
+            "Các Tiểu vương quốc Ả Rập Thống nhất (United Arab Emirates)",
+            "Cameroon (Cameroon)",
+            "Campuchia (Cambodia)",
+            "Canada",
+            "Chad",
+            "Chile",
+            "Colombia",
+            "Comoros",
+            "Cộng hòa Congo (Congo Republic)",
+            "Cộng hòa Dân chủ Congo (Democratic Republic of the Congo)",
+            "Cộng hòa Dominica (Dominican Republic)",
+            "Cộng hòa Séc (Czech Republic)",
+            "Cộng hòa Trung Phi (Central African Republic)",
+            "Costa Rica",
+            "Croatia",
+            "Cuba",
+            "Đài Loan (Taiwan)",
+            "Đan Mạch (Denmark)",
+            "Djibouti",
+            "Dominica",
+            "Đông Timor (East Timor)",
+            "Đức (Germany)",
+            "Ecuador",
+            "El Salvador",
+            "Eritrea",
+            "Estonia",
+            "Eswatini (formerly Swaziland)",
+            "Ethiopia",
+            "Fiji",
+            "Gabon",
+            "Gambia",
+            "Georgia",
+            "Ghana",
+            "Grenada",
+            "Guatemala",
+            "Guinea",
+            "Guinea-Bissau",
+            "Guinea Xích Đạo (Equatorial Guinea)",
+            "Guyana",
+            "Hà Lan (Netherlands)",
+            "Haiti",
+            "Hàn Quốc (South Korea)",
+            "Hoa Kỳ (United States of America)",
+            "Honduras",
+            "Hungary",
+            "Hy Lạp (Greece)",
+            "Iceland",
+            "Indonesia",
+            "Iran",
+            "Iraq",
+            "Ireland",
+            "Israel",
+            "Jamaica",
+            "Jordan",
+            "Kazakhstan",
+            "Kenya",
+            "Kiribati",
+            "Kuwait",
+            "Kyrgyzstan",
+            "Lào (Laos)",
+            "Latvia",
+            "Lebanon",
+            "Lesotho",
+            "Liberia",
+            "Libya",
+            "Liechtenstein",
+            "Lithuania",
+            "Luxembourg",
+            "Madagascar",
+            "Malawi",
+            "Malaysia",
+            "Maldives",
+            "Mali",
+            "Malta",
+            "Mauritania",
+            "Mauritius",
+            "México (Mexico)",
+            "Micronesia",
+            "Moldova",
+            "Monaco",
+            "Mongolia",
+            "Montenegro",
+            "Morocco",
+            "Mozambique",
+            "Myanmar (formerly Burma)",
+            "Na Uy (Norway)",
+            "Nam Phi (South Africa)",
+            "Nam Sudan (South Sudan)",
+            "Namibia",
+            "Nauru",
+            "Nepal",
+            "New Zealand (New Zealand)",
+            "Nga (Russia)",
+            "Nhật Bản (Japan)",
+            "Nicaragua",
+            "Niger",
+            "Nigeria",
+            "Oman",
+            "Pakistan",
+            "Palau",
+            "Palestine",
+            "Panama",
+            "Papua New Guinea",
+            "Paraguay",
+            "Peru",
+            "Phần Lan (Finland)",
+            "Pháp (France)",
+            "Philippines",
+            "Qatar",
+            "Quần đảo Marshall (Marshall Islands)",
+            "Romania",
+            "Rwanda",
+            "Saint Kitts và Nevis",
+            "Saint Lucia",
+            "Saint Vincent và Grenadines",
+            "Samoa",
+            "San Marino",
+            "São Tomé và Príncipe",
+            "Saudi Arabia",
+            "Senegal",
+            "Serbia",
+            "Seychelles",
+            "Sierra Leone",
+            "Singapore",
+            "Síp (Cyprus)",
+            "Slovakia",
+            "Slovenia",
+            "Solomon Islands",
+            "Somalia",
+            "Sri Lanka",
+            "Sudan",
+            "Suriname",
+            "Syria",
+            "Tajikistan",
+            "Tanzania",
+            "Tây Ban Nha (Spain)",
+            "Thái Lan (Thailand)",
+            "Thổ Nhĩ Kỳ (Turkey)",
+            "Thụy Điển (Sweden)",
+            "Thụy Sĩ (Switzerland)",
+            "Togo",
+            "Tonga",
+            "Trinidad và Tobago (Trinidad and Tobago)",
+            "Trung Quốc (China)",
+            "Tunisia",
+            "Turkmenistan",
+            "Tuvalu",
+            "Úc (Australia)",
+            "Uganda",
+            "Ukraine",
+            "Uruguay",
+            "Uzbekistan",
+            "Vanuatu",
+            "Vatican City (Holy See)",
+            "Venezuela",
+            "Việt Nam (Vietnam)",
+            "Vương quốc Anh (United Kingdom)",
+            "Ý (Italy)",
+            "Yemen",
+            "Zambia",
+            "Zimbabwe"});
+            this.cboQuocTich.Location = new System.Drawing.Point(172, 772);
+            this.cboQuocTich.Name = "cboQuocTich";
+            this.cboQuocTich.Size = new System.Drawing.Size(227, 24);
+            this.cboQuocTich.Sorted = true;
+            this.cboQuocTich.TabIndex = 152;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(47, 772);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(72, 17);
+            this.label12.TabIndex = 151;
+            this.label12.Text = "Quốc tịch:";
+            // 
+            // dtpNguoiDi
+            // 
+            this.dtpNguoiDi.CustomFormat = "hh:mm::ss - dd/MM/yyyy";
+            this.dtpNguoiDi.Enabled = false;
+            this.dtpNguoiDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNguoiDi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNguoiDi.Location = new System.Drawing.Point(656, 485);
+            this.dtpNguoiDi.Name = "dtpNguoiDi";
+            this.dtpNguoiDi.ShowUpDown = true;
+            this.dtpNguoiDi.Size = new System.Drawing.Size(227, 22);
+            this.dtpNguoiDi.TabIndex = 154;
+            // 
+            // dtpNgayDen
+            // 
+            this.dtpNgayDen.CustomFormat = "hh:mm::ss - dd/MM/yyyy";
+            this.dtpNgayDen.Enabled = false;
+            this.dtpNgayDen.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayDen.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayDen.Location = new System.Drawing.Point(656, 435);
+            this.dtpNgayDen.Name = "dtpNgayDen";
+            this.dtpNgayDen.ShowUpDown = true;
+            this.dtpNgayDen.Size = new System.Drawing.Size(227, 22);
+            this.dtpNgayDen.TabIndex = 153;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(517, 490);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(60, 17);
+            this.label38.TabIndex = 156;
+            this.label38.Text = "Ngày đi:";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(515, 435);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(73, 17);
+            this.label39.TabIndex = 155;
+            this.label39.Text = "Ngày đến:";
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgaySinh.Enabled = false;
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(172, 585);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.ShowUpDown = true;
+            this.dtpNgaySinh.Size = new System.Drawing.Size(227, 22);
+            this.dtpNgaySinh.TabIndex = 145;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(47, 590);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(75, 17);
+            this.label7.TabIndex = 150;
+            this.label7.Text = "Ngày sinh:";
+            // 
+            // pnlGioiTinh_DatPhong
+            // 
+            this.pnlGioiTinh_DatPhong.Controls.Add(this.rdoNu);
+            this.pnlGioiTinh_DatPhong.Controls.Add(this.rdoNam);
+            this.pnlGioiTinh_DatPhong.Location = new System.Drawing.Point(172, 635);
+            this.pnlGioiTinh_DatPhong.Name = "pnlGioiTinh_DatPhong";
+            this.pnlGioiTinh_DatPhong.Size = new System.Drawing.Size(151, 30);
+            this.pnlGioiTinh_DatPhong.TabIndex = 149;
+            // 
+            // rdoNu
+            // 
+            this.rdoNu.AutoSize = true;
+            this.rdoNu.Enabled = false;
+            this.rdoNu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoNu.Location = new System.Drawing.Point(99, 5);
+            this.rdoNu.Name = "rdoNu";
+            this.rdoNu.Size = new System.Drawing.Size(47, 21);
+            this.rdoNu.TabIndex = 5;
+            this.rdoNu.TabStop = true;
+            this.rdoNu.Text = "Nữ";
+            this.rdoNu.UseVisualStyleBackColor = true;
+            // 
+            // rdoNam
+            // 
+            this.rdoNam.AutoSize = true;
+            this.rdoNam.Enabled = false;
+            this.rdoNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoNam.Location = new System.Drawing.Point(3, 5);
+            this.rdoNam.Name = "rdoNam";
+            this.rdoNam.Size = new System.Drawing.Size(58, 21);
+            this.rdoNam.TabIndex = 4;
+            this.rdoNam.TabStop = true;
+            this.rdoNam.Text = "Nam";
+            this.rdoNam.UseVisualStyleBackColor = true;
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Enabled = false;
+            this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDT.ForeColor = System.Drawing.Color.Black;
+            this.txtSDT.Location = new System.Drawing.Point(172, 689);
+            this.txtSDT.MaxLength = 12;
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.ReadOnly = true;
+            this.txtSDT.Size = new System.Drawing.Size(227, 22);
+            this.txtSDT.TabIndex = 146;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(47, 689);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(40, 17);
+            this.label9.TabIndex = 148;
+            this.label9.Text = "SĐT:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(47, 635);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(64, 17);
+            this.label11.TabIndex = 147;
+            this.label11.Text = "Giới tính:";
+            // 
+            // txtTenKhach
+            // 
+            this.txtTenKhach.Enabled = false;
+            this.txtTenKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenKhach.ForeColor = System.Drawing.Color.Black;
+            this.txtTenKhach.Location = new System.Drawing.Point(172, 533);
+            this.txtTenKhach.Name = "txtTenKhach";
+            this.txtTenKhach.ReadOnly = true;
+            this.txtTenKhach.Size = new System.Drawing.Size(227, 22);
+            this.txtTenKhach.TabIndex = 143;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(47, 536);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(79, 17);
+            this.label46.TabIndex = 144;
+            this.label46.Text = "Tên khách:";
+            // 
+            // txtLoaiPhong
+            // 
+            this.txtLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoaiPhong.Location = new System.Drawing.Point(172, 490);
+            this.txtLoaiPhong.Name = "txtLoaiPhong";
+            this.txtLoaiPhong.ReadOnly = true;
+            this.txtLoaiPhong.Size = new System.Drawing.Size(227, 22);
+            this.txtLoaiPhong.TabIndex = 140;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(47, 490);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(83, 17);
+            this.label8.TabIndex = 142;
+            this.label8.Text = "Loại phòng:";
+            // 
+            // txtPhong
+            // 
+            this.txtPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhong.Location = new System.Drawing.Point(172, 440);
+            this.txtPhong.Name = "txtPhong";
+            this.txtPhong.ReadOnly = true;
+            this.txtPhong.Size = new System.Drawing.Size(227, 22);
+            this.txtPhong.TabIndex = 139;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(47, 440);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(53, 17);
+            this.label45.TabIndex = 141;
+            this.label45.Text = "Phòng:";
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.Location = new System.Drawing.Point(472, 821);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(125, 48);
+            this.btnThanhToan.TabIndex = 163;
+            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
+            // 
+            // btnInHoaDon
+            // 
+            this.btnInHoaDon.Location = new System.Drawing.Point(307, 821);
+            this.btnInHoaDon.Name = "btnInHoaDon";
+            this.btnInHoaDon.Size = new System.Drawing.Size(130, 48);
+            this.btnInHoaDon.TabIndex = 164;
+            this.btnInHoaDon.Text = "In hóa đơn";
+            this.btnInHoaDon.UseVisualStyleBackColor = true;
+            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(400, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 17);
+            this.label1.TabIndex = 165;
+            this.label1.Text = "Thanh Toán Tiền Phòng";
+            // 
+            // txtTraChoKhach
+            // 
+            this.txtTraChoKhach.Enabled = false;
+            this.txtTraChoKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTraChoKhach.ForeColor = System.Drawing.Color.Black;
+            this.txtTraChoKhach.Location = new System.Drawing.Point(656, 774);
+            this.txtTraChoKhach.Name = "txtTraChoKhach";
+            this.txtTraChoKhach.ReadOnly = true;
+            this.txtTraChoKhach.Size = new System.Drawing.Size(227, 22);
+            this.txtTraChoKhach.TabIndex = 167;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(515, 779);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 17);
+            this.label2.TabIndex = 166;
+            this.label2.Text = "Tổng trả cho khách:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "hh:mm::ss - dd/MM/yyyy";
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(656, 531);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.ShowUpDown = true;
+            this.dateTimePicker1.Size = new System.Drawing.Size(227, 22);
+            this.dateTimePicker1.TabIndex = 168;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(517, 535);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 17);
+            this.label3.TabIndex = 169;
+            this.label3.Text = "Ngày trả phòng:";
+            // 
+            // txtCMND
+            // 
+            this.txtCMND.Enabled = false;
+            this.txtCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCMND.ForeColor = System.Drawing.Color.Black;
+            this.txtCMND.Location = new System.Drawing.Point(172, 731);
+            this.txtCMND.MaxLength = 20;
+            this.txtCMND.Name = "txtCMND";
+            this.txtCMND.ReadOnly = true;
+            this.txtCMND.Size = new System.Drawing.Size(227, 22);
+            this.txtCMND.TabIndex = 170;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(45, 731);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(112, 17);
+            this.label10.TabIndex = 171;
+            this.label10.Text = "CMND/Hộ chiếu:";
+            // 
+            // txtTienKhachTra
+            // 
+            this.txtTienKhachTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTienKhachTra.ForeColor = System.Drawing.Color.Black;
+            this.txtTienKhachTra.Location = new System.Drawing.Point(656, 731);
+            this.txtTienKhachTra.Name = "txtTienKhachTra";
+            this.txtTienKhachTra.Size = new System.Drawing.Size(227, 22);
+            this.txtTienKhachTra.TabIndex = 173;
+            this.txtTienKhachTra.TextChanged += new System.EventHandler(this.txtTienKhachTra_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(517, 734);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 17);
+            this.label4.TabIndex = 172;
+            this.label4.Text = "Tổng khách trả:";
             // 
             // FrmTraPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1541, 644);
-            this.Controls.Add(this.dtpNgayTraPhong_TraPhong);
-            this.Controls.Add(this.dtpNgayDi_TraPhong);
-            this.Controls.Add(this.dtpNgayDen_TraPhong);
+            this.ClientSize = new System.Drawing.Size(1010, 872);
+            this.Controls.Add(this.txtTienKhachTra);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtCMND);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtTraChoKhach);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnInHoaDon);
+            this.Controls.Add(this.btnThanhToan);
+            this.Controls.Add(this.txtTongTien);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.txtTienDichVu);
+            this.Controls.Add(this.txtTienPhong);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.cboQuocTich);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.dtpNguoiDi);
+            this.Controls.Add(this.dtpNgayDen);
+            this.Controls.Add(this.label38);
+            this.Controls.Add(this.label39);
+            this.Controls.Add(this.dtpNgaySinh);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.pnlGioiTinh_DatPhong);
+            this.Controls.Add(this.txtSDT);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtTenKhach);
+            this.Controls.Add(this.label46);
+            this.Controls.Add(this.txtLoaiPhong);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtPhong);
+            this.Controls.Add(this.label45);
             this.Controls.Add(this.label73);
-            this.Controls.Add(this.txtTongPhi_TraPhong);
-            this.Controls.Add(this.txtPhiPhuThu_TraPhong);
-            this.Controls.Add(this.txtPhiPhong_TraPhong);
-            this.Controls.Add(this.txtSoNgayThue_TraPhong);
-            this.Controls.Add(this.txtSoNguoi_TraPhong);
-            this.Controls.Add(this.txtTenNhanVien_TraPhong);
-            this.Controls.Add(this.txtMaNhanVien_TraPhong);
-            this.Controls.Add(this.txtTenKhach_TraPhong);
-            this.Controls.Add(this.txtMaKhach_TraPhong);
-            this.Controls.Add(this.txtGiaPhong_TraPhong);
-            this.Controls.Add(this.txtTenPhong_TraPhong);
-            this.Controls.Add(this.txtMaPhong_TraPhong);
-            this.Controls.Add(this.label62);
-            this.Controls.Add(this.dgvBangPhuThu_TraPhong);
-            this.Controls.Add(this.label82);
-            this.Controls.Add(this.label83);
-            this.Controls.Add(this.label84);
-            this.Controls.Add(this.label85);
-            this.Controls.Add(this.label86);
-            this.Controls.Add(this.label77);
-            this.Controls.Add(this.label78);
-            this.Controls.Add(this.label79);
-            this.Controls.Add(this.label80);
-            this.Controls.Add(this.label81);
-            this.Controls.Add(this.label76);
-            this.Controls.Add(this.label75);
-            this.Controls.Add(this.label74);
-            this.Controls.Add(this.label72);
-            this.Controls.Add(this.dgvBangTraPhong_TraPhong);
-            this.Controls.Add(this.txtNhapTimKiem_TraPhong);
-            this.Controls.Add(this.cboTruongTimKiem_TraPhong);
-            this.Controls.Add(this.label71);
+            this.Controls.Add(this.dgvBangDichVu);
             this.Name = "FrmTraPhong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTraPhong";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBangPhuThu_TraPhong)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBangTraPhong_TraPhong)).EndInit();
+            this.Load += new System.EventHandler(this.FrmTraPhong_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBangDichVu)).EndInit();
+            this.pnlGioiTinh_DatPhong.ResumeLayout(false);
+            this.pnlGioiTinh_DatPhong.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DateTimePicker dtpNgayTraPhong_TraPhong;
-        private System.Windows.Forms.DateTimePicker dtpNgayDi_TraPhong;
-        private System.Windows.Forms.DateTimePicker dtpNgayDen_TraPhong;
         private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.TextBox txtTongPhi_TraPhong;
-        private System.Windows.Forms.TextBox txtPhiPhuThu_TraPhong;
-        private System.Windows.Forms.TextBox txtPhiPhong_TraPhong;
-        private System.Windows.Forms.TextBox txtSoNgayThue_TraPhong;
-        private System.Windows.Forms.TextBox txtSoNguoi_TraPhong;
-        private System.Windows.Forms.TextBox txtTenNhanVien_TraPhong;
-        private System.Windows.Forms.TextBox txtMaNhanVien_TraPhong;
-        private System.Windows.Forms.TextBox txtTenKhach_TraPhong;
-        private System.Windows.Forms.TextBox txtMaKhach_TraPhong;
-        private System.Windows.Forms.TextBox txtGiaPhong_TraPhong;
-        private System.Windows.Forms.TextBox txtTenPhong_TraPhong;
-        private System.Windows.Forms.TextBox txtMaPhong_TraPhong;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.DataGridView dgvBangPhuThu_TraPhong;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.DataGridView dgvBangTraPhong_TraPhong;
-        private System.Windows.Forms.TextBox txtNhapTimKiem_TraPhong;
-        private System.Windows.Forms.ComboBox cboTruongTimKiem_TraPhong;
-        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.DataGridView dgvBangDichVu;
+        private System.Windows.Forms.TextBox txtTongTien;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtTienDichVu;
+        private System.Windows.Forms.TextBox txtTienPhong;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox cboQuocTich;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DateTimePicker dtpNguoiDi;
+        private System.Windows.Forms.DateTimePicker dtpNgayDen;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel pnlGioiTinh_DatPhong;
+        private System.Windows.Forms.RadioButton rdoNu;
+        private System.Windows.Forms.RadioButton rdoNam;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtTenKhach;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.TextBox txtLoaiPhong;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtPhong;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Button btnThanhToan;
+        private System.Windows.Forms.Button btnInHoaDon;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtTraChoKhach;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtCMND;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtTienKhachTra;
+        private System.Windows.Forms.Label label4;
     }
 }

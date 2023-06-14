@@ -121,8 +121,10 @@ namespace Hotel_Management_System_Winforrm
                 SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
                 sqlCommand.Parameters.AddWithValue("@tendichvu", tendichvu);
                 sqlCommand.Parameters.AddWithValue("@phong", phong);
-                soluongdat = (int)sqlCommand.ExecuteScalar();
-                sqlConnection.Close();
+                if (sqlCommand.ExecuteScalar() != null)
+                {
+                    soluongdat = (int)sqlCommand.ExecuteScalar();
+                }
             }
             catch
             {
