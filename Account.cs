@@ -10,22 +10,35 @@ namespace Hotel_Management_System_Winforrm
 {
     class Account
     {
-        private string taikhoan;
+        private string tentaikhoan;
         private string matkhau;
-        private int phanquyen;
-        private int trangthai;
-
-        public Account(string taikhoan, string matkhau, int phanquyen, int trangthai)
-        {
-            this.taikhoan = taikhoan;
-            this.matkhau = matkhau;
-            this.phanquyen = phanquyen;
-            this.trangthai = trangthai;
-        }
-
-        public string Taikhoan { get => taikhoan; set => taikhoan = value; }
+        private string tennv;
+        private string sdt;
+        private DateTime ngaysinh;
+        private string gioitinh;
+        public string Tentaikhoan { get => tentaikhoan; set => tentaikhoan = value; }
         public string Matkhau { get => matkhau; set => matkhau = value; }
-        public int Phanquyen { get => phanquyen; set => phanquyen = value; }
-        public int Trangthai { get => trangthai; set => trangthai = value; }
+
+        public string Tennv { get => tennv; set => tennv = value; }
+        public string Sdt { get => sdt; set => sdt = value; }
+        public DateTime Ngaysinh { get => ngaysinh; set => ngaysinh = value; }
+        public string Gioitinh { get => gioitinh; set => gioitinh = value; }
+
+        public Account(string tentaikhoan, string matkhau)
+        {
+            this.Tentaikhoan = tentaikhoan;
+            this.Matkhau = matkhau;
+        }
+        public Account() { }
+
+        public Account(string tentaikhoan, string matkhau, string tennv, string sdt, DateTime ngaysinh, string gioitinh)
+        {
+            this.tentaikhoan = tentaikhoan;
+            this.matkhau = matkhau;
+            this.tennv = tennv;
+            this.sdt = sdt;
+            this.ngaysinh = ngaysinh;
+            this.gioitinh = gioitinh;
+        }
     }
 }

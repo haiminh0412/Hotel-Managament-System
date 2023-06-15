@@ -293,6 +293,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSignUp";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmSignUp_FormClosed);
+            this.Load += new System.EventHandler(this.FrmSignUp_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

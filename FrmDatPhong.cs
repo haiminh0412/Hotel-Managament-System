@@ -270,7 +270,7 @@ namespace Hotel_Management_System_Winforrm
                 txtTienDatCoc_DatPhong.ForeColor = Color.Black;
                 tiendatcoc = Convert.ToDouble(txtTienDatCoc_DatPhong.Text);
                 double tienconlai = Convert.ToDouble(txtGiaPhong_DatPhong.Text) - tiendatcoc;
-                txtTienPhaiTra_DatPhong.Text = tienconlai.ToString();
+                txtTienPhaiTra_DatPhong.Text = tienconlai >= 0 ? tienconlai.ToString() : "0";
             }
         }
 

@@ -15,16 +15,19 @@ namespace Hotel_Management_System_Winforrm
         private TraPhong traPhong;
         private string tenphong;
         private QuanLyTraPhong quanLyTraPhong;
+        private Button btnPhong;
 
-        public FrmTraPhong(string tenphong)
+        public FrmTraPhong(string tenphong, Button btnPhong)
         {
             InitializeComponent();
             this.tenphong = tenphong;
             traPhong = new TraPhong();
+            this.btnPhong = btnPhong;
         }
 
         private void FrmTraPhong_Load(object sender, EventArgs e)
         {
+            btnInHoaDon.Enabled = false;
             try
             {
                 dgvBangDichVu.DataSource = traPhong.hienThiBangDichVu(tenphong);
@@ -89,7 +92,7 @@ namespace Hotel_Management_System_Winforrm
 
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {
-            InHoaDon inHoaDon = new InHoaDon();
+            InHoaDon inHoaDon = new InHoaDon(tenphong);
             inHoaDon.Show();
         }
 
@@ -103,6 +106,11 @@ namespace Hotel_Management_System_Winforrm
                 }
                 txtTienKhachTra.ReadOnly = true;
                 MessageBox.Show("Thanh toan thanh cong!");
+                btnPhong.BackColor = Color.White;
+                traPhong.xoaBangDatDichVu(tenphong);
+                traPhong.xoaThongTinThuePhong(tenphong);
+                traPhong.capNhapTrangThai(tenphong);
+                btnInHoaDon.Enabled = true;
             }
         }
     }

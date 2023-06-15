@@ -137,6 +137,33 @@ namespace Hotel_Management_System_Winforrm
             return soluongdat;
         }
 
+        public int soLuongSanPham(string tendichvu)
+        {
+            string query = "select soluong from dichvu where tendichvu = @tendichvu";
+            SqlConnection sqlConnection = null;
+            int soluong = 0;
+            try
+            {
+                sqlConnection = Connection.getConnection();
+                sqlConnection.Open();
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@tendichvu", tendichvu);
+                if (sqlCommand.ExecuteScalar() != null)
+                {
+                    soluong = (int)sqlCommand.ExecuteScalar();
+                }
+            }
+            catch
+            {
+                return 0;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+            return soluong;
+        }
+
         public bool capNhapBangDatDichVu(string tendichvu, int soluongdat, float gia, string phong)
         {
             string query = "update bangdatdichvu set soluongkhachdat = @soluongdat, tongtien = @tongtien where tendichvu = @tendichvu and phong = @phong";
@@ -201,9 +228,9 @@ namespace Hotel_Management_System_Winforrm
             return dataTable;
         }
 
-        public bool themdichvu(string phong, string tendv, string loaidv, float gia, int soluong, int soluongkhachdat, float tongtien)
+        public bool themdichvu(string phong, string tendv, string loaidv, float gia, int soluongkhachdat, float tongtien)
         {
-            string query = "insert into bangdatdichvu values(@phong, @tendichvu, @loaidichvu, @gia,  @soluong, @soluongkhachdat, @tongtien)";
+            string query = "insert into bangdatdichvu values(@phong, @tendichvu, @loaidichvu, @gia, @soluongkhachdat, @tongtien)";
             SqlConnection sqlConnection = null;
             try
             {
@@ -214,7 +241,6 @@ namespace Hotel_Management_System_Winforrm
                 sqlCommand.Parameters.AddWithValue("@tendichvu", tendv);
                 sqlCommand.Parameters.AddWithValue("@loaidichvu", loaidv);
                 sqlCommand.Parameters.AddWithValue("@gia", gia);
-                sqlCommand.Parameters.AddWithValue("@soluong", soluong);
                 sqlCommand.Parameters.AddWithValue("@soluongkhachdat", soluongkhachdat);
                 sqlCommand.Parameters.AddWithValue("@tongtien", tongtien);
                 sqlCommand.ExecuteNonQuery();
@@ -228,6 +254,30 @@ namespace Hotel_Management_System_Winforrm
                 sqlConnection.Close();
             }
             return true ;
+        }
+
+        public bool xoaDichVu(string tendichvu, string phong)
+        {
+            string query = "delete from bangdatdichvu where tendichvu = @tendichvu and phong = @phong";
+            SqlConnection sqlConnection = null;
+            try
+            {
+                sqlConnection = Connection.getConnection();
+                sqlConnection.Open();
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@tendichvu", tendichvu);
+                sqlCommand.Parameters.AddWithValue("@phong", phong);
+                sqlCommand.ExecuteNonQuery();
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+            return true;
         }
     }
 }

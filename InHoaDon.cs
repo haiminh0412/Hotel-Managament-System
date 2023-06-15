@@ -16,9 +16,11 @@ namespace Hotel_Management_System_Winforrm
     {
         SqlDataAdapter sqlDataAdapter;
         DataSet dataSet;
-        public InHoaDon()
+        private string tenphong;
+        public InHoaDon(string tenphong)
         {
             InitializeComponent();
+            this.tenphong = tenphong;
         }
 
         private void InHoaDon_Load(object sender, EventArgs e)
@@ -27,7 +29,7 @@ namespace Hotel_Management_System_Winforrm
             {
                 SqlConnection sqlConnection = Connection.getConnection();
                 sqlConnection.Open();
-                string query = "select * from traphong";
+                string query = "select top 1 * from traphong where phong = '" + tenphong + "'";
                 sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
                 dataSet = new DataSet();
                 sqlDataAdapter.Fill(dataSet, "traphong");

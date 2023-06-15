@@ -32,6 +32,39 @@ namespace Hotel_Management_System_Winforrm
             txtLoaiSanPham.Text = dichvu.Loaidichvu;
         }
 
+        private void trangthai(string s)
+        {
+            switch(s)
+            {
+                case "macdinh":
+                    txtChonSoLuong.ReadOnly = false;
+                    btnDatDichVu.Enabled = true;
+                    btnHuyDichVu.Enabled = false;
+                    btnSuaDichVu.Enabled = false;
+                    btnLuu.Enabled = false;
+                    break;
+
+                case "cell-click":
+                    txtChonSoLuong.ReadOnly = true;
+                    btnDatDichVu.Enabled = false;
+                    btnHuyDichVu.Enabled = true;
+                    btnSuaDichVu.Enabled = true;
+                    btnLuu.Enabled = false;
+                    break;
+
+                case "Sua":
+                    txtChonSoLuong.ReadOnly = false;
+                    btnDatDichVu.Enabled = false;
+                    btnHuyDichVu.Enabled = false;
+                    btnSuaDichVu.Enabled = false;
+                    btnLuu.Enabled = true;
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
         private float TienDichVu()
         {
             tiendichvu = float.Parse(txtChonSoLuong.Text) * float.Parse(txtGia.Text);
@@ -212,12 +245,28 @@ namespace Hotel_Management_System_Winforrm
 
         private void FrmThongTinDichVu_Load(object sender, EventArgs e)
         {
+            tiendichvu = 0.0f;
             txtPhong.Text = tenphong;
-            txtTienDichVu.Text = "0";
             txtChonSoLuong.Text = "0";
             txtSoLuong.Text = "0";
             txtGia.Text = "0";
             txtGiaDichVu.Text = "0";
+            trangthai("macdinh");
+            try
+            {
+                dgvBangDichVu.DataSource = qLDichVu.bangdatdichvu(txtPhong.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi hiển thị bảng dịch vụ!");
+            }
+
+            for (int i = 0; i < dgvBangDichVu.Rows.Count - 1; ++i)
+            {
+                tiendichvu += float.Parse(dgvBangDichVu.Rows[i].Cells[5].Value.ToString());
+            }
+            txtTienDichVu.Text = tiendichvu.ToString();
+
             ThuePhong thuePhong = new ThuePhong();
             if (qLDichVu.thongTinKhachThuePhong(thuePhong, tenphong))
             {
@@ -239,29 +288,20 @@ namespace Hotel_Management_System_Winforrm
             {
                 MessageBox.Show("Lỗi hiển thị thông tin khách đang ở!");
             }
-
-            try
-            {
-                dgvBangDichVu.DataSource = qLDichVu.bangdatdichvu(txtPhong.Text);
-            }
-            catch
-            {
-                MessageBox.Show("Lỗi hiển thị bảng dịch vụ!");
-            }
         }
 
-        private void btnDatDichVu_Click(object sender, EventArgs e)
+        private void DatDichVu()
         {
             if (txtChonSoLuong.Text == "0") return;
 
-            if(txtChonSoLuong.Text == "" || txtChonSoLuong.ForeColor == Color.Red)
+            if (txtChonSoLuong.Text == "" || txtChonSoLuong.ForeColor == Color.Red)
             {
                 MessageBox.Show("Vui lòng nhập số lượng cho đúng!");
                 return;
             }
 
             int soluongdat = qLDichVu.timSoLuongDat(txtTenSanPham.Text, txtPhong.Text);
-  
+
             try
             {
                 string phong = txtPhong.Text;
@@ -270,9 +310,20 @@ namespace Hotel_Management_System_Winforrm
                 float gia = float.Parse(txtGia.Text);
                 int soluong = Convert.ToInt32(txtSoLuong.Text);
                 int soluongkhachdat = Convert.ToInt32(txtChonSoLuong.Text);
-                float tiendichvu = float.Parse(txtGiaDichVu.Text);
+                float giadv = float.Parse(txtGiaDichVu.Text);
                 soluongdat += soluongkhachdat;
-                if(soluongdat == soluongkhachdat && qLDichVu.themdichvu(phong, tendichvu, loaidichvu, gia, soluong, soluongkhachdat, tiendichvu))
+
+                int soluongconlai = Convert.ToInt32(txtSoLuong.Text) - Convert.ToInt32(txtChonSoLuong.Text);
+                if (qLDichVu.capNhapSoLuongDichVu(txtTenSanPham.Text, soluongconlai))
+                {
+                    txtSoLuong.Text = soluongconlai.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Cap nhap so luong bi loi!");
+                }
+
+                if (soluongdat == soluongkhachdat && qLDichVu.themdichvu(phong, tendichvu, loaidichvu, gia, soluongkhachdat, giadv))
                 {
                     try
                     {
@@ -283,7 +334,7 @@ namespace Hotel_Management_System_Winforrm
                         MessageBox.Show("Lỗi hiển thị bảng dịch vụ!");
                     }
                 }
-                else if(qLDichVu.capNhapBangDatDichVu(tendichvu, soluongdat, gia, phong))
+                else if (qLDichVu.capNhapBangDatDichVu(tendichvu, soluongdat, gia, phong))
                 {
                     try
                     {
@@ -304,22 +355,133 @@ namespace Hotel_Management_System_Winforrm
                 MessageBox.Show("Lỗi thêm dịch vụ! ");
             }
 
-            int soluongconlai = Convert.ToInt32(txtSoLuong.Text) - Convert.ToInt32(txtChonSoLuong.Text);
-            if (qLDichVu.capNhapSoLuongDichVu(txtTenSanPham.Text, soluongconlai))
+            tiendichvu = 0.0f;
+            for (int i = 0; i < dgvBangDichVu.Rows.Count - 1; ++i)
             {
-                txtSoLuong.Text = soluongconlai.ToString();
+                tiendichvu += float.Parse(dgvBangDichVu.Rows[i].Cells[5].Value.ToString());
             }
-            else
-            {
-                MessageBox.Show("Cap nhap so luong bi loi!");
-            }
-
-            tiendichvu += Convert.ToInt32(txtGiaDichVu.Text);
             txtTienDichVu.Text = tiendichvu.ToString();
             tongtienphaitra = tongTienPhaiTra();
             txtTongTien.Text = tongtienphaitra.ToString();
+            reset();
+            trangthai("macdinh");
+        }
 
+        private void btnDatDichVu_Click(object sender, EventArgs e)
+        {
+            DatDichVu();
+        }
+
+        private void huyDichVu()
+        {
+            DialogResult result = MessageBox.Show(
+                  "Bạn có chắc muốn xóa không?",
+                  "Thông báo!",
+                  MessageBoxButtons.YesNo,
+                  MessageBoxIcon.Question
+              );
+
+            if (result == DialogResult.Yes)
+            {
+                txtTienDichVu.Text = (float.Parse(txtTienDichVu.Text) - float.Parse(txtGiaDichVu.Text)).ToString();
+                tongtienphaitra = tongTienPhaiTra();
+                txtTongTien.Text = tongtienphaitra.ToString();
+                int soluongdat = Convert.ToInt32(txtChonSoLuong.Text);
+                soluongdat += Convert.ToInt32(txtSoLuong.Text);
+                qLDichVu.capNhapSoLuongDichVu(txtTenSanPham.Text, soluongdat);
+                if (qLDichVu.xoaDichVu(txtTenSanPham.Text, tenphong))
+                {
+                    dgvBangDichVu.DataSource = qLDichVu.bangdatdichvu(tenphong);
+                }
+                else
+                {
+                    MessageBox.Show("Loi xoa dich vu!");
+                }
+                reset();
+                trangthai("macdinh");
+            }
+        }
+
+        private void btnHuyDichVu_Click(object sender, EventArgs e)
+        {
+            huyDichVu();
+        }
+
+        private void dgvBangDichVu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            trangthai("cell-click");
+            DataGridViewRow row = (DataGridViewRow)dgvBangDichVu.Rows[e.RowIndex];
+            if (e.RowIndex >= 0 && e.RowIndex < dgvBangDichVu.RowCount - 1)
+            {
+                txtTenSanPham.Text = row.Cells[1].Value.ToString();
+                txtLoaiSanPham.Text = row.Cells[2].Value.ToString();
+                txtGia.Text = row.Cells[3].Value.ToString();
+                txtChonSoLuong.Text = row.Cells[4].Value.ToString();
+                txtGiaDichVu.Text = row.Cells[5].Value.ToString();
+                int soluong = qLDichVu.soLuongSanPham(txtTenSanPham.Text);
+                txtSoLuong.Text = soluong.ToString();
+            }
+        }
+
+        private void btnSuaDichVu_Click(object sender, EventArgs e)
+        {
+            trangthai("Sua");
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            
+               DialogResult result = MessageBox.Show(
+                   "Bạn có chắc muốn lưu không?",
+                   "Thông báo!",
+                   MessageBoxButtons.YesNo,
+                   MessageBoxIcon.Question
+               );
+
+            if (result == DialogResult.Yes)
+            {
+                string tendichvu = txtTenSanPham.Text;
+                int soluongdat = Convert.ToInt32(txtChonSoLuong.Text);
+                float gia = float.Parse(txtGia.Text);
+                if (qLDichVu.capNhapBangDatDichVu(tendichvu, soluongdat, gia, tenphong))
+                {
+                    try
+                    {
+                        dgvBangDichVu.DataSource = qLDichVu.bangdatdichvu(tenphong);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Lỗi hiển thị bảng dịch vụ!");
+                    }
+                    tiendichvu = 0.0f;
+                    for (int i = 0; i < dgvBangDichVu.Rows.Count - 1; ++i)
+                    {
+                        tiendichvu += float.Parse(dgvBangDichVu.Rows[i].Cells[5].Value.ToString());
+                    }
+                    txtTienDichVu.Text = tiendichvu.ToString();
+                    tongtienphaitra = tongTienPhaiTra();
+                    txtTongTien.Text = tongtienphaitra.ToString();
+                    reset();
+                    trangthai("macdinh");
+                }
+            }
+        }
+
+        private void reset()
+        {
+            txtChonSoLuong.ReadOnly = false;
+            txtChonSoLuong.Text = "";
+            txtTenSanPham.Text = "";
+            txtLoaiSanPham.Text = "";
+            txtGia.Text = "0";
+            txtSoLuong.Text = "0";
             txtChonSoLuong.Text = "0";
+            txtGiaDichVu.Text = "0";
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            reset();
         }
     }
 }

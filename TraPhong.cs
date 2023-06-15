@@ -161,5 +161,73 @@ namespace Hotel_Management_System_Winforrm
             }
             return true;
         }
+
+        public void xoaThongTinThuePhong(string tenphong)
+        {
+            string query = "delete from thuephong where phong = @tenphong";
+            SqlConnection sqlConnection = null;
+            try
+            {
+                sqlConnection = Connection.getConnection();
+                sqlConnection.Open();
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@tenphong", tenphong);
+                sqlCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                if (sqlConnection != null && sqlConnection.State == ConnectionState.Open)
+                    sqlConnection.Close();
+            }
+        }
+
+        public void xoaBangDatDichVu(string tenphong)
+        {
+            string query = "delete from bangdatdichvu where phong = @tenphong";
+            SqlConnection sqlConnection = null;
+            try
+            {
+                sqlConnection = Connection.getConnection();
+                sqlConnection.Open();
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@tenphong", tenphong);
+                sqlCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                if (sqlConnection != null && sqlConnection.State == ConnectionState.Open)
+                    sqlConnection.Close();
+            }
+        }
+
+        public bool capNhapTrangThai(string tenphong)
+        {
+            string query = "update phong set trangthai = 'Trong' where phong = '" + tenphong + "'";
+            SqlConnection sqlConnection = null;
+            try
+            {
+                sqlConnection = Connection.getConnection();
+                sqlConnection.Open();
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.ExecuteNonQuery();
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+            return true;
+        }
     }
 }

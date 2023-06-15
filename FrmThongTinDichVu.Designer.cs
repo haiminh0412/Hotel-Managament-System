@@ -61,7 +61,7 @@
             this.label45 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnSuaDichVu = new System.Windows.Forms.Button();
             this.btnHuyDichVu = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
@@ -88,6 +88,8 @@
             this.btnComRang = new System.Windows.Forms.Button();
             this.btnCoca = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangDichVu)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -109,6 +111,7 @@
             // 
             // dgvBangDichVu
             // 
+            this.dgvBangDichVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBangDichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBangDichVu.Location = new System.Drawing.Point(8, 21);
             this.dgvBangDichVu.Name = "dgvBangDichVu";
@@ -117,6 +120,7 @@
             this.dgvBangDichVu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBangDichVu.Size = new System.Drawing.Size(938, 350);
             this.dgvBangDichVu.TabIndex = 0;
+            this.dgvBangDichVu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBangDichVu_CellClick);
             // 
             // groupBox2
             // 
@@ -659,7 +663,8 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.btnThoat);
+            this.groupBox4.Controls.Add(this.btnLuu);
+            this.groupBox4.Controls.Add(this.btnSuaDichVu);
             this.groupBox4.Controls.Add(this.btnHuyDichVu);
             this.groupBox4.Controls.Add(this.groupBox5);
             this.groupBox4.Controls.Add(this.btnDatDichVu);
@@ -670,23 +675,25 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Đặt dịch vụ";
             // 
-            // btnThoat
+            // btnSuaDichVu
             // 
-            this.btnThoat.Location = new System.Drawing.Point(380, 349);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(99, 41);
-            this.btnThoat.TabIndex = 7;
-            this.btnThoat.Text = "Thoát:";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnSuaDichVu.Location = new System.Drawing.Point(324, 352);
+            this.btnSuaDichVu.Name = "btnSuaDichVu";
+            this.btnSuaDichVu.Size = new System.Drawing.Size(99, 41);
+            this.btnSuaDichVu.TabIndex = 7;
+            this.btnSuaDichVu.Text = "Sửa dịch vụ";
+            this.btnSuaDichVu.UseVisualStyleBackColor = true;
+            this.btnSuaDichVu.Click += new System.EventHandler(this.btnSuaDichVu_Click);
             // 
             // btnHuyDichVu
             // 
-            this.btnHuyDichVu.Location = new System.Drawing.Point(241, 349);
+            this.btnHuyDichVu.Location = new System.Drawing.Point(185, 352);
             this.btnHuyDichVu.Name = "btnHuyDichVu";
             this.btnHuyDichVu.Size = new System.Drawing.Size(99, 41);
             this.btnHuyDichVu.TabIndex = 6;
             this.btnHuyDichVu.Text = "Hủy dịch vụ";
             this.btnHuyDichVu.UseVisualStyleBackColor = true;
+            this.btnHuyDichVu.Click += new System.EventHandler(this.btnHuyDichVu_Click);
             // 
             // groupBox5
             // 
@@ -813,7 +820,7 @@
             // 
             // btnDatDichVu
             // 
-            this.btnDatDichVu.Location = new System.Drawing.Point(96, 349);
+            this.btnDatDichVu.Location = new System.Drawing.Point(40, 352);
             this.btnDatDichVu.Name = "btnDatDichVu";
             this.btnDatDichVu.Size = new System.Drawing.Size(99, 41);
             this.btnDatDichVu.TabIndex = 4;
@@ -958,11 +965,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh sách dịch vụ";
             // 
+            // btnLuu
+            // 
+            this.btnLuu.Location = new System.Drawing.Point(447, 352);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(99, 41);
+            this.btnLuu.TabIndex = 8;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(1228, 732);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(99, 41);
+            this.btnReset.TabIndex = 9;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // FrmThongTinDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1587, 777);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -1003,7 +1031,7 @@
         private System.Windows.Forms.Button btnComRang;
         private System.Windows.Forms.Button btnCoca;
         private System.Windows.Forms.DataGridView dgvBangDichVu;
-        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnSuaDichVu;
         private System.Windows.Forms.Button btnHuyDichVu;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox txtGiaDichVu;
@@ -1047,5 +1075,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnReset;
     }
 }
